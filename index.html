@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letters For You ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #b11226;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.envelopes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.envelope {
+  background-color: #e63946;
+  padding: 40px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.envelope:hover {
+  transform: scale(1.05);
+  background-color: #ff4d6d;
+}
+
+.letter-content {
+  display: none;
+  margin-top: 40px;
+  background: white;
+  color: #b11226;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #b11226;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Made this for the boy I love the most ❤️</h1>
+
+  <div class="envelopes">
+    <div class="envelope" onclick="openLetter('miss')">
+      Open when you miss me
+    </div>
+
+    <div class="envelope" onclick="openLetter('sad')">
+      Open when you are sad
+    </div>
+
+    <div class="envelope" onclick="openLetter('tired')">
+      Open when you feel tired
+    </div>
+
+    <div class="envelope" onclick="openLetter('valentine')">
+      Open on Valentine's Day
+    </div>
+  </div>
+
+  <div id="letter" class="letter-content"></div>
+
+</div>
+
+<script>
+function openLetter(type) {
+  const letterBox = document.getElementById("letter");
+
+  if (type === "miss") {
+    letterBox.innerHTML = "<h2>Hi love ❤️</h2><p>If you're missing me right now, just know I probably am too. Distance doesn't change how deeply I care about you. Close your eyes and imagine me hugging you tight.</p>";
+  }
+
+  if (type === "sad") {
+    letterBox.innerHTML = "<h2>Hey you 🥺</h2><p>It's okay to feel sad sometimes. I wish I could sit next to you and make everything better. But until then, remember you're stronger than you think — and I am always on your team.</p>";
+  }
+
+  if (type === "tired") {
+    letterBox.innerHTML = "<h2>My hardworking boy 💙</h2><p>Take a breath. You've done enough for today. I'm so proud of you. Rest a little. The world can wait.</p>";
+  }
+
+  if (type === "valentine") {
+    letterBox.innerHTML = "<h2>Happy Valentine's Day ❤️</h2><p>Out of all the people in this world, I’m so grateful I get to love you. You make my life softer, warmer, and infinitely better.</p>";
+  }
+
+  letterBox.style.display = "block";
+}
+</script>
+
+</body>
+</html>
 
