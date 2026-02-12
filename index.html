@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Open When Letters</title>
+<style>
+body {
+    margin: 0;
+    background: #b30000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+.browser {
+    width: 900px;
+    margin: auto;
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+.envelope {
+    width: 220px;
+    height: 150px;
+    background: #cc0000;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.envelope:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top: 75px solid #990000;
+}
+
+.label {
+    margin-top: 15px;
+    background: #e60000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Made this for the boy I love the most 💌</h1>
+
+<div class="browser">
+    <div class="grid">
+
+        <a href="missme.html">
+            <div class="envelope"></div>
+            <div class="label">Open when you miss me</div>
+        </a>
+
+        <a href="smile.html">
+            <div class="envelope"></div>
+            <div class="label">Open when you need Smile</div>
+        </a>
+
+        <a href="sad.html">
+            <div class="envelope"></div>
+            <div class="label">Open when you are Sad</div>
+        </a>
+
+        <a href="tired.html">
+            <div class="envelope"></div>
+            <div class="label">Open when you feel tired</div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
 
