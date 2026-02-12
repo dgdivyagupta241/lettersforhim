@@ -2,11 +2,15 @@
 <html>
 <head>
 <title>Love Coupons</title>
+
+<!-- Elegant Instagram-style Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
     background: #b30000;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
@@ -16,13 +20,66 @@ body {
     background: #f2f2f2;
     border-radius: 15px;
     padding: 40px;
+    position: relative;
+}
+
+/* Romantic floating hearts */
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: #b30000;
+}
+
+.heart1 { top: 20px; left: 40px; }
+.heart2 { top: 60px; right: 80px; }
+.heart3 { bottom: 40px; left: 100px; }
+.heart4 { bottom: 70px; right: 60px; }
+
+/* Coupon grid */
+.coupon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .coupon {
-    border: 2px dashed #b30000;
-    padding: 20px;
-    margin: 15px;
+    background: #b30000;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
     font-size: 20px;
+    font-weight: bold;
+}
+
+/* Ticket stub cut circles */
+.coupon:before,
+.coupon:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.coupon:before {
+    left: -15px;
+}
+
+.coupon:after {
+    right: -15px;
+}
+
+.romantic-text {
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #b30000;
+    font-style: italic;
 }
 
 .back {
@@ -34,12 +91,24 @@ body {
 <body>
 
 <div class="browser">
-<h2>Love Coupons 💝</h2>
 
-<div class="coupon">Date Night</div>
-<div class="coupon">Unlimited Hugs</div>
-<div class="coupon">Unlimited Kisses</div>
-<div class="coupon">Your Wish</div>
+<div class="heart heart1">❤️</div>
+<div class="heart heart2">❤️</div>
+<div class="heart heart3">❤️</div>
+<div class="heart heart4">❤️</div>
+
+<h2 style="color:#b30000;">Love Coupons 🎟️</h2>
+
+<div class="coupon-grid">
+    <div class="coupon">Date Night</div>
+    <div class="coupon">Unlimited Hugs</div>
+    <div class="coupon">Unlimited Kisses</div>
+    <div class="coupon">Your Wish</div>
+</div>
+
+<div class="romantic-text">
+Use them freely… I never run out when it comes to you.
+</div>
 
 <div class="back">
 <a href="index.html">← Back</a>
@@ -49,4 +118,5 @@ body {
 
 </body>
 </html>
+
 
